@@ -1,0 +1,22 @@
+* req.query
+** // GET /search?q=tobi+ferret
+*** req.query.q
+**** // => "tobi ferret"
+** // GET /shoes?order=desc&shoe[color]=blue&shoe[type]=converse
+*** req.query.order
+**** // => "desc"
+*** req.query.shoe.color
+**** // => "blue"
+*** req.query.shoe.type
+**** // => "converse"
+
+
+* req.body
+** // POST user[name]=tobi&user[email]=tobi@learnboost.com
+*** req.body.user.name
+**** // => "tobi"
+*** req.body.user.email
+**** // => "tobi@learnboost.com"
+** // POST { "name": "tobi" }
+*** req.body.name
+**** // => "tobi"
