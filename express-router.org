@@ -31,3 +31,7 @@
   req.params[0]
   // => "javascript/jquery.js"
 #+end_src
+
+[[http://www.google.com][Google]]
+[[~/org/test.org][TEST!]]
+[[./test2.org][TEST2!]]
