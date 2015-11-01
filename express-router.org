@@ -20,3 +20,14 @@
 + // POST { "name": "tobi" }
   - req.body.name
     // => "tobi"
+
+** req.params
+#+begin_src javascript
+  // GET /user/tj
+  req.params.name
+  // => "tj"
+
+  // GET /file/javascripts/jquery.js
+  req.params[0]
+  // => "javascript/jquery.js"
+#-end_src
